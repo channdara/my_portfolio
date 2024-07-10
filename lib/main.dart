@@ -19,6 +19,7 @@ class _MyPortfolioState extends State<MyPortfolio> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'My Portfolio',
       home: const MainPage(),
       themeMode: ThemeMode.dark,
       darkTheme: ThemeData(
