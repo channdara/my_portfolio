@@ -15,10 +15,14 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
-    return const BasePageBuilder(
-      phone: MainPagePhone(),
-      tablet: MainPageWebsite(spacing: tabletSpacing),
-      website: MainPageWebsite(spacing: websiteSpacing),
+    return const DefaultTabController(
+      length: tabLength,
+      initialIndex: tabInitialIndex,
+      child: BasePageBuilder(
+        phone: MainPagePhone(),
+        tablet: MainPageWebsite(spacing: tabletSpacing),
+        website: MainPageWebsite(spacing: websiteSpacing),
+      ),
     );
   }
 }
