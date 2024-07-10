@@ -15,7 +15,7 @@ class HomePageAvatar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size.width / imageSizeFactor;
-    final spacing = 5.0 * imageSizeFactor;
+    final spacing = 4.0 * imageSizeFactor;
     return Container(
       height: size,
       width: size,
