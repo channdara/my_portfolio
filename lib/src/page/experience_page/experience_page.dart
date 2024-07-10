@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../main_data.dart';
 import '../../base/base_page_builder.dart';
-import 'build/experience_page_phone.dart';
-import 'build/experience_page_website.dart';
+import 'component/experience_page_phone.dart';
+import 'component/experience_page_website.dart';
 
 class ExperiencePage extends StatefulWidget {
   const ExperiencePage({super.key});

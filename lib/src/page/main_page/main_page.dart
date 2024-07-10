@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../main_data.dart';
 import '../../base/base_page_builder.dart';
-import 'build/main_page_phone.dart';
-import 'build/main_page_website.dart';
+import 'component/main_page_phone.dart';
+import 'component/main_page_website.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});

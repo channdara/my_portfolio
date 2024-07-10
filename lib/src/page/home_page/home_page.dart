@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../main_data.dart';
 import '../../base/base_page_builder.dart';
-import 'build/home_page_phone.dart';
-import 'build/home_page_website.dart';
+import 'component/home_page_phone.dart';
+import 'component/home_page_website.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
