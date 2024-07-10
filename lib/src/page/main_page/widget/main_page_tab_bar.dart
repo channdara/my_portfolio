@@ -40,6 +40,7 @@ class MainPageTabBarView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const TabBarView(
+      physics: NeverScrollableScrollPhysics(),
       children: [
         HomePage(),
         AboutPage(),
