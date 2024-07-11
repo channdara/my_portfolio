@@ -27,14 +27,12 @@ class ExperiencePageWebsite extends StatelessWidget {
                 Expanded(
                   child: ExperiencePageCard(
                     experience: Experience.mangoByte(),
-                    margin: EdgeInsets.only(top: spacing / 3),
                   ),
                 ),
                 const SizedBox(width: 32.0),
                 Expanded(
                   child: ExperiencePageCard(
                     experience: Experience.wonderpass(),
-                    margin: EdgeInsets.only(bottom: spacing / 3),
                     primary: true,
                   ),
                 ),
@@ -42,7 +40,6 @@ class ExperiencePageWebsite extends StatelessWidget {
                 Expanded(
                   child: ExperiencePageCard(
                     experience: Experience.freelancer(),
-                    margin: EdgeInsets.only(top: spacing / 3),
                   ),
                 ),
               ],

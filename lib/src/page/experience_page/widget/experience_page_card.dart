@@ -7,18 +7,15 @@ class ExperiencePageCard extends StatelessWidget {
   const ExperiencePageCard({
     super.key,
     required this.experience,
-    this.margin = EdgeInsets.zero,
     this.primary = false,
   });
 
   final Experience experience;
-  final EdgeInsetsGeometry margin;
   final bool primary;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: margin,
       height: double.infinity,
       clipBehavior: Clip.hardEdge,
       decoration: BoxDecoration(
