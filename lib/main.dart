@@ -24,7 +24,7 @@ class _MyPortfolioState extends State<MyPortfolio> {
       themeMode: ThemeMode.dark,
       darkTheme: ThemeData(
         fontFamily: 'LexendDeca',
-        primarySwatch: MaterialColorUtil.fromColor(primaryColor),
+        colorSchemeSeed: MaterialColorUtil.fromColor(primaryColor),
         scaffoldBackgroundColor: secondaryColor,
         appBarTheme: const AppBarTheme(
           centerTitle: false,
