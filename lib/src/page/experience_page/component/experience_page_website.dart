@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../experience_page_data.dart';
 import '../widget/experience_page_card.dart';
+import '../widget/experience_page_subtitle.dart';
 import '../widget/experience_page_title.dart';
 
 class ExperiencePageWebsite extends StatelessWidget {
@@ -19,6 +20,8 @@ class ExperiencePageWebsite extends StatelessWidget {
       child: Column(
         children: [
           const ExperiencePageTitle(),
+          const SizedBox(height: 8.0),
+          const ExperiencePageSubtitle(textAlign: TextAlign.center),
           const SizedBox(height: 32.0),
           Expanded(
             child: Row(

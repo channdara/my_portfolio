@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../main_data.dart';
 import '../experience_page_data.dart';
 import '../widget/experience_page_card_phone.dart';
+import '../widget/experience_page_subtitle.dart';
 import '../widget/experience_page_title.dart';
 
 class ExperiencePagePhone extends StatelessWidget {
@@ -16,6 +17,8 @@ class ExperiencePagePhone extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           const ExperiencePageTitle(),
+          const SizedBox(height: 8.0),
+          const ExperiencePageSubtitle(),
           const SizedBox(height: 32.0),
           ExperiencePageCardPhone(
             experience: Experience.wonderpass(),
