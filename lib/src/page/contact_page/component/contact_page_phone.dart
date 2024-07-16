@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../main_data.dart';
+import '../../../util/launcher_util.dart';
 import '../contact_page_data.dart';
 import '../widget/contact_page_item.dart';
 import '../widget/contact_page_subtitle.dart';
@@ -57,7 +58,9 @@ class ContactPagePhone extends StatelessWidget {
             alignment: WrapAlignment.center,
             children: Contact.items.map((e) {
               return InkWell(
-                onTap: () {},
+                onTap: () {
+                  LauncherUtil.open(e.url);
+                },
                 borderRadius: BorderRadius.circular(50.0),
                 child: Padding(
                   padding: const EdgeInsets.all(4.0),
