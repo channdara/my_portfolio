@@ -17,7 +17,7 @@ class HomePagePhone extends StatelessWidget {
             margin: EdgeInsets.zero,
             imageSizeFactor: 3,
           ),
-          SizedBox(height: 32.0),
+          SizedBox(height: phoneSpacing),
           HomePageGreeting(),
         ],
       ),

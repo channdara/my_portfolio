@@ -20,7 +20,7 @@ class ContactPagePhone extends StatelessWidget {
           const ContactPageTitle(),
           const SizedBox(height: 8.0),
           const ContactPageSubtitle(),
-          const SizedBox(height: 64.0),
+          const SizedBox(height: phoneSpacing),
           const Text(
             'My Information',
             style: TextStyle(
@@ -42,7 +42,7 @@ class ContactPagePhone extends StatelessWidget {
             label: 'Email',
             content: 'eamchanndara@gmail.com',
           ),
-          const SizedBox(height: 56.0),
+          const SizedBox(height: phoneSpacing - 8.0),
           const Text(
             'Social Media',
             style: TextStyle(

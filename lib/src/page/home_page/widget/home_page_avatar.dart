@@ -26,7 +26,7 @@ class HomePageAvatar extends StatelessWidget {
             clipBehavior: Clip.hardEdge,
             margin: EdgeInsets.only(left: spacing, top: spacing),
             decoration: BoxDecoration(
-              borderRadius: borderRadius,
+              borderRadius: borderRadiusNormal,
               border: Border.all(color: accentColor, width: imageSizeFactor),
             ),
           ),
@@ -34,7 +34,7 @@ class HomePageAvatar extends StatelessWidget {
             color: Colors.grey,
             margin: EdgeInsets.only(right: spacing, bottom: spacing),
             clipBehavior: Clip.hardEdge,
-            shape: RoundedRectangleBorder(borderRadius: borderRadius),
+            shape: RoundedRectangleBorder(borderRadius: borderRadiusNormal),
             child: Image.asset(
               'assets/image/img_avatar.jpeg',
               fit: BoxFit.cover,

@@ -19,11 +19,11 @@ class ExperiencePageCardPhone extends StatelessWidget {
       clipBehavior: Clip.hardEdge,
       decoration: BoxDecoration(
         color: primaryColor,
-        borderRadius: borderRadius,
+        borderRadius: borderRadiusNormal,
         border: primary ? Border.all(color: accentColor) : null,
       ),
       child: Padding(
-        padding: const EdgeInsets.all(24.0),
+        padding: const EdgeInsets.all(phoneSpacing),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -36,7 +36,6 @@ class ExperiencePageCardPhone extends StatelessWidget {
               experience.title,
               style: const TextStyle(fontSize: 18.0, color: accentColor),
             ),
-            const SizedBox(height: 4.0),
             Text(
               experience.subtitle,
               style: const TextStyle(color: Colors.grey),

@@ -19,16 +19,16 @@ class ExperiencePagePhone extends StatelessWidget {
           const ExperiencePageTitle(),
           const SizedBox(height: 8.0),
           const ExperiencePageSubtitle(),
-          const SizedBox(height: 32.0),
+          const SizedBox(height: phoneSpacing),
           ExperiencePageCardPhone(
             experience: Experience.wonderpass(),
             primary: true,
           ),
-          const SizedBox(height: 32.0),
+          const SizedBox(height: phoneSpacing),
           ExperiencePageCardPhone(
             experience: Experience.mangoByte(),
           ),
-          const SizedBox(height: 32.0),
+          const SizedBox(height: phoneSpacing),
           ExperiencePageCardPhone(
             experience: Experience.freelancer(),
           ),

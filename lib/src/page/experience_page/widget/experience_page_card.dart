@@ -20,7 +20,7 @@ class ExperiencePageCard extends StatelessWidget {
       clipBehavior: Clip.hardEdge,
       decoration: BoxDecoration(
         color: primaryColor,
-        borderRadius: borderRadius,
+        borderRadius: borderRadiusNormal,
         border: primary ? Border.all(color: accentColor) : null,
       ),
       child: SingleChildScrollView(

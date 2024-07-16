@@ -13,8 +13,11 @@ class AboutPagePhone extends StatelessWidget {
       padding: EdgeInsets.all(phoneSpacing),
       child: Column(
         children: [
-          AboutPageAvatar(margin: EdgeInsets.zero, imageSizeFactor: 3),
-          SizedBox(height: 32.0),
+          AboutPageAvatar(
+            margin: EdgeInsets.zero,
+            imageSizeFactor: 3,
+          ),
+          SizedBox(height: phoneSpacing),
           AboutPageDescription(),
         ],
       ),

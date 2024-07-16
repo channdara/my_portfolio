@@ -5,6 +5,7 @@ import '../../about_page/about_page.dart';
 import '../../contact_page/contact_page.dart';
 import '../../experience_page/experience_page.dart';
 import '../../home_page/home_page.dart';
+import '../../project_page/project_page.dart';
 
 class MainPageTabBar extends StatelessWidget implements PreferredSizeWidget {
   const MainPageTabBar({super.key, this.tabAlignment});
@@ -22,7 +23,7 @@ class MainPageTabBar extends StatelessWidget implements PreferredSizeWidget {
       isScrollable: true,
       dividerHeight: 0.0,
       indicatorColor: accentColor,
-      splashBorderRadius: borderRadius,
+      splashBorderRadius: borderRadiusNormal,
       tabAlignment: tabAlignment,
       tabs: const [
         Tab(text: 'Home'),
@@ -46,7 +47,7 @@ class MainPageTabBarView extends StatelessWidget {
         HomePage(),
         AboutPage(),
         ExperiencePage(),
-        SizedBox(),
+        ProjectPage(),
         ContactPage(),
       ],
     );
