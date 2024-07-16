@@ -55,7 +55,6 @@ class ContactPagePhone extends StatelessWidget {
           Wrap(
             spacing: 16.0,
             runSpacing: 16.0,
-            alignment: WrapAlignment.center,
             children: Contact.items.map((e) {
               return InkWell(
                 onTap: () {
