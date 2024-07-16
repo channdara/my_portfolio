@@ -21,7 +21,7 @@ class ExperiencePageCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: primaryColor,
         borderRadius: borderRadius,
-        border: primary ? Border.all(color: extraColor) : null,
+        border: primary ? Border.all(color: accentColor) : null,
       ),
       child: SingleChildScrollView(
         padding: const EdgeInsets.all(32.0),
@@ -35,7 +35,7 @@ class ExperiencePageCard extends StatelessWidget {
             const SizedBox(height: 16.0),
             Text(
               experience.title,
-              style: const TextStyle(fontSize: 18.0, color: extraColor),
+              style: const TextStyle(fontSize: 18.0, color: accentColor),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 4.0),

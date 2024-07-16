@@ -20,7 +20,7 @@ class ExperiencePageCardPhone extends StatelessWidget {
       decoration: BoxDecoration(
         color: primaryColor,
         borderRadius: borderRadius,
-        border: primary ? Border.all(color: extraColor) : null,
+        border: primary ? Border.all(color: accentColor) : null,
       ),
       child: Padding(
         padding: const EdgeInsets.all(24.0),
@@ -34,7 +34,7 @@ class ExperiencePageCardPhone extends StatelessWidget {
             const SizedBox(height: 16.0),
             Text(
               experience.title,
-              style: const TextStyle(fontSize: 18.0, color: extraColor),
+              style: const TextStyle(fontSize: 18.0, color: accentColor),
             ),
             const SizedBox(height: 4.0),
             Text(

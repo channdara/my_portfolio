@@ -15,7 +15,7 @@ class HomePageAvatar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size.width / imageSizeFactor;
-    final spacing = 4.0 * imageSizeFactor;
+    final spacing = imageSizeFactor * 3;
     return Container(
       height: size,
       width: size,
@@ -27,7 +27,7 @@ class HomePageAvatar extends StatelessWidget {
             margin: EdgeInsets.only(left: spacing, top: spacing),
             decoration: BoxDecoration(
               borderRadius: borderRadius,
-              border: Border.all(color: extraColor, width: imageSizeFactor),
+              border: Border.all(color: accentColor, width: imageSizeFactor),
             ),
           ),
           Card(

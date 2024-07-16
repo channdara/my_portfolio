@@ -13,7 +13,10 @@ class HomePagePhone extends StatelessWidget {
       padding: EdgeInsets.all(phoneSpacing),
       child: Column(
         children: [
-          HomePageAvatar(margin: EdgeInsets.zero, imageSizeFactor: 3),
+          HomePageAvatar(
+            margin: EdgeInsets.zero,
+            imageSizeFactor: 3,
+          ),
           SizedBox(height: 32.0),
           HomePageGreeting(),
         ],

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../widget/subtitle_widget.dart';
+
 class ExperiencePageSubtitle extends StatelessWidget {
   const ExperiencePageSubtitle({super.key, this.textAlign});
 
@@ -7,9 +9,8 @@ class ExperiencePageSubtitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
+    return SubtitleWidget(
       'Experienced mobile app developer dedicated to building innovative and efficient mobile solutions.',
-      style: const TextStyle(color: Colors.grey, fontSize: 16.0),
       textAlign: textAlign,
     );
   }

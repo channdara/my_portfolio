@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class BasePageBuilder extends StatelessWidget {
-  const BasePageBuilder({
+class PageBuilderWidget extends StatelessWidget {
+  const PageBuilderWidget({
     super.key,
     required this.phone,
     required this.tablet,

@@ -12,7 +12,7 @@ class MainPageTitle extends StatelessWidget {
         children: [
           TextSpan(
             text: 'EAM',
-            style: TextStyle(color: extraColor),
+            style: TextStyle(color: accentColor),
           ),
           TextSpan(text: ' Channdara'),
         ],

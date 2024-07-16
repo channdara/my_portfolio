@@ -13,7 +13,7 @@ class HomePageGreeting extends StatelessWidget {
         Text(
           'Greeting!',
           style: TextStyle(
-            color: extraColor,
+            color: accentColor,
             fontSize: 18.0,
           ),
         ),

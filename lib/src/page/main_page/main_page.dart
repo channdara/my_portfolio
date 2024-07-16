@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../main_data.dart';
-import '../../base/base_page_builder.dart';
+import '../../widget/page_builder_widget.dart';
 import 'component/main_page_phone.dart';
 import 'component/main_page_website.dart';
 
@@ -18,7 +18,7 @@ class _MainPageState extends State<MainPage> {
     return const DefaultTabController(
       length: tabLength,
       initialIndex: tabInitialIndex,
-      child: BasePageBuilder(
+      child: PageBuilderWidget(
         phone: MainPagePhone(),
         tablet: MainPageWebsite(spacing: tabletSpacing),
         website: MainPageWebsite(spacing: websiteSpacing),

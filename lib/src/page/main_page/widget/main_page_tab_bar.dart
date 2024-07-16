@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../main_data.dart';
 import '../../about_page/about_page.dart';
+import '../../contact_page/contact_page.dart';
 import '../../experience_page/experience_page.dart';
 import '../../home_page/home_page.dart';
 
@@ -20,7 +21,7 @@ class MainPageTabBar extends StatelessWidget implements PreferredSizeWidget {
       unselectedLabelColor: Colors.grey,
       isScrollable: true,
       dividerHeight: 0.0,
-      indicatorColor: extraColor,
+      indicatorColor: accentColor,
       splashBorderRadius: borderRadius,
       tabAlignment: tabAlignment,
       tabs: const [
@@ -46,7 +47,7 @@ class MainPageTabBarView extends StatelessWidget {
         AboutPage(),
         ExperiencePage(),
         SizedBox(),
-        SizedBox(),
+        ContactPage(),
       ],
     );
   }

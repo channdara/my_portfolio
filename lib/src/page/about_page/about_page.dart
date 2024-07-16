@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../main_data.dart';
-import '../../base/base_page_builder.dart';
+import '../../widget/page_builder_widget.dart';
 import 'component/about_page_phone.dart';
 import 'component/about_page_website.dart';
 
@@ -15,7 +15,7 @@ class AboutPage extends StatefulWidget {
 class _AboutPageState extends State<AboutPage> {
   @override
   Widget build(BuildContext context) {
-    return const BasePageBuilder(
+    return const PageBuilderWidget(
       phone: AboutPagePhone(),
       tablet: AboutPageWebsite(spacing: tabletSpacing),
       website: AboutPageWebsite(spacing: websiteSpacing),
