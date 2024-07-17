@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../main_data.dart';
-import '../experience_page_data.dart';
+import '../../../common/app_common_data.dart';
+import '../../../common/app_text_style.dart';
+import '../../../model/experience.dart';
 
 class ExperiencePageCard extends StatelessWidget {
   const ExperiencePageCard({
@@ -16,42 +17,38 @@ class ExperiencePageCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: double.infinity,
       clipBehavior: Clip.hardEdge,
+      padding: const EdgeInsets.all(phoneSpacing),
       decoration: BoxDecoration(
         color: primaryColor,
         borderRadius: borderRadiusNormal,
         border: primary ? Border.all(color: accentColor) : null,
       ),
-      child: SingleChildScrollView(
-        padding: const EdgeInsets.all(32.0),
-        child: Column(
-          children: [
-            Text(
-              experience.date,
-              style: const TextStyle(color: Colors.white),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 16.0),
-            Text(
-              experience.title,
-              style: const TextStyle(fontSize: 18.0, color: accentColor),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 4.0),
-            Text(
-              experience.subtitle,
-              style: const TextStyle(color: Colors.grey),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 16.0),
-            Text(
-              experience.description,
-              style: const TextStyle(color: Colors.white),
-              textAlign: TextAlign.start,
-            ),
-          ],
-        ),
+      child: Column(
+        children: [
+          Text(
+            experience.date,
+            style: AppTextStyle.s14,
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: phoneSpacing),
+          Text(
+            experience.title,
+            style: AppTextStyle.s16BoldAccent,
+            textAlign: TextAlign.center,
+          ),
+          Text(
+            experience.subtitle,
+            style: AppTextStyle.s14Grey,
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: phoneSpacing),
+          Text(
+            experience.description,
+            style: AppTextStyle.s14,
+            textAlign: TextAlign.start,
+          ),
+        ],
       ),
     );
   }

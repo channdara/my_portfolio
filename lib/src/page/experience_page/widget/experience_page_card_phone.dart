@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../main_data.dart';
-import '../experience_page_data.dart';
+import '../../../common/app_common_data.dart';
+import '../../../common/app_text_style.dart';
+import '../../../model/experience.dart';
 
 class ExperiencePageCardPhone extends StatelessWidget {
   const ExperiencePageCardPhone({
@@ -17,36 +18,34 @@ class ExperiencePageCardPhone extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       clipBehavior: Clip.hardEdge,
+      padding: const EdgeInsets.all(phoneSpacing),
       decoration: BoxDecoration(
         color: primaryColor,
         borderRadius: borderRadiusNormal,
         border: primary ? Border.all(color: accentColor) : null,
       ),
-      child: Padding(
-        padding: const EdgeInsets.all(phoneSpacing),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              experience.date,
-              style: const TextStyle(color: Colors.white),
-            ),
-            const SizedBox(height: 16.0),
-            Text(
-              experience.title,
-              style: const TextStyle(fontSize: 18.0, color: accentColor),
-            ),
-            Text(
-              experience.subtitle,
-              style: const TextStyle(color: Colors.grey),
-            ),
-            const SizedBox(height: 16.0),
-            Text(
-              experience.description,
-              style: const TextStyle(color: Colors.white),
-            ),
-          ],
-        ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            experience.date,
+            style: AppTextStyle.s14,
+          ),
+          const SizedBox(height: phoneSpacing),
+          Text(
+            experience.title,
+            style: AppTextStyle.s18Accent,
+          ),
+          Text(
+            experience.subtitle,
+            style: AppTextStyle.s14Grey,
+          ),
+          const SizedBox(height: phoneSpacing),
+          Text(
+            experience.description,
+            style: AppTextStyle.s14,
+          ),
+        ],
       ),
     );
   }

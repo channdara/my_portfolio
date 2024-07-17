@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../main_data.dart';
+import '../../../common/app_common_data.dart';
+import '../../../model/project.dart';
 import '../../../util/launcher_util.dart';
-import '../project_page_data.dart';
 
 class ProjectStoreListing extends StatelessWidget {
   const ProjectStoreListing({
@@ -17,7 +17,7 @@ class ProjectStoreListing extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 16.0),
+      padding: const EdgeInsets.only(top: phoneSpacing),
       child: Row(
         mainAxisAlignment: mainAxisAlignment,
         children: [

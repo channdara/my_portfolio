@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'main_data.dart';
+import 'src/common/app_common_data.dart';
 import 'src/page/main_page/main_page.dart';
 import 'src/util/material_color_util.dart';
 
@@ -23,13 +23,13 @@ class _MyPortfolioState extends State<MyPortfolio> {
       home: const MainPage(),
       themeMode: ThemeMode.dark,
       darkTheme: ThemeData(
+        brightness: Brightness.dark,
         fontFamily: 'LexendDeca',
         colorSchemeSeed: MaterialColorUtil.fromColor(primaryColor),
         scaffoldBackgroundColor: secondaryColor,
         appBarTheme: const AppBarTheme(
           centerTitle: false,
           backgroundColor: primaryColor,
-          foregroundColor: Colors.white,
         ),
       ),
     );

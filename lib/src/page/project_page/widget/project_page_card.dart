@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../main_data.dart';
-import '../project_page_data.dart';
+import '../../../common/app_common_data.dart';
+import '../../../common/app_text_style.dart';
+import '../../../model/project.dart';
 import 'project_store_listing.dart';
 
 class ProjectPageCard extends StatelessWidget {
@@ -17,7 +18,7 @@ class ProjectPageCard extends StatelessWidget {
         borderRadius: borderRadiusNormal,
       ),
       child: SingleChildScrollView(
-        padding: const EdgeInsets.all(32.0),
+        padding: const EdgeInsets.all(phoneSpacing),
         child: Column(
           children: [
             AspectRatio(
@@ -35,20 +36,15 @@ class ProjectPageCard extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 32.0),
+            const SizedBox(height: phoneSpacing),
             Text(
               project.name,
-              style: const TextStyle(
-                fontSize: 16.0,
-                color: accentColor,
-                fontWeight: FontWeight.bold,
-              ),
+              style: AppTextStyle.s16BoldAccent,
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: 4.0),
             Text(
               project.tag,
-              style: const TextStyle(color: Colors.grey),
+              style: AppTextStyle.s14Grey,
               textAlign: TextAlign.center,
             ),
             if (project.showStoreListing)
@@ -56,10 +52,10 @@ class ProjectPageCard extends StatelessWidget {
                 project: project,
                 mainAxisAlignment: MainAxisAlignment.center,
               ),
-            const SizedBox(height: 16.0),
+            const SizedBox(height: phoneSpacing),
             Text(
               project.description,
-              style: const TextStyle(color: Colors.white),
+              style: AppTextStyle.s14,
             ),
           ],
         ),

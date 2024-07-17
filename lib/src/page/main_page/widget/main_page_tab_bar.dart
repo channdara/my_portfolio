@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../main_data.dart';
+import '../../../common/app_common_data.dart';
 import '../../about_page/about_page.dart';
 import '../../contact_page/contact_page.dart';
 import '../../experience_page/experience_page.dart';
@@ -42,7 +42,6 @@ class MainPageTabBarView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const TabBarView(
-      physics: NeverScrollableScrollPhysics(),
       children: [
         HomePage(),
         AboutPage(),

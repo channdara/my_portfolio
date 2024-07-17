@@ -1,5 +1,3 @@
-// Facebook, Telegram, GitHub, Instagram, LinkedIn,
-
 class Contact {
   Contact(
     this.imageAsset,

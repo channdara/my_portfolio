@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../main_data.dart';
-import '../project_page_data.dart';
+import '../../../common/app_common_data.dart';
+import '../../../common/app_text_style.dart';
+import '../../../model/project.dart';
 import 'project_store_listing.dart';
 
 class ProjectPageCardPhone extends StatelessWidget {
@@ -12,7 +13,6 @@ class ProjectPageCardPhone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(bottom: phoneSpacing),
       padding: const EdgeInsets.all(phoneSpacing),
       decoration: BoxDecoration(
         color: primaryColor,
@@ -45,16 +45,12 @@ class ProjectPageCardPhone extends StatelessWidget {
                   children: [
                     Text(
                       project.name,
-                      style: const TextStyle(
-                        fontSize: 16.0,
-                        color: accentColor,
-                        fontWeight: FontWeight.bold,
-                      ),
+                      style: AppTextStyle.s16BoldAccent,
                       textAlign: TextAlign.center,
                     ),
                     Text(
                       project.tag,
-                      style: const TextStyle(color: Colors.grey),
+                      style: AppTextStyle.s14Grey,
                       textAlign: TextAlign.center,
                     ),
                     if (project.showStoreListing)
@@ -70,7 +66,7 @@ class ProjectPageCardPhone extends StatelessWidget {
           const SizedBox(height: phoneSpacing),
           Text(
             project.description,
-            style: const TextStyle(color: Colors.white),
+            style: AppTextStyle.s14,
           ),
         ],
       ),

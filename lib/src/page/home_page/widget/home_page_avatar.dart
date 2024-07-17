@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../main_data.dart';
+import '../../../common/app_common_data.dart';
 
 class HomePageAvatar extends StatelessWidget {
   const HomePageAvatar({

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../main_data.dart';
+import '../../../common/app_common_data.dart';
+import '../../../common/app_text_style.dart';
 
 class HomePageGreeting extends StatelessWidget {
   const HomePageGreeting({super.key});
@@ -12,27 +13,17 @@ class HomePageGreeting extends StatelessWidget {
       children: [
         Text(
           'Greeting!',
-          style: TextStyle(
-            color: accentColor,
-            fontSize: 18.0,
-          ),
+          style: AppTextStyle.s18Accent,
         ),
-        SizedBox(height: 32.0),
+        SizedBox(height: phoneSpacing),
         Text(
           "I'm EAM Channdara",
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 26.0,
-            fontWeight: FontWeight.bold,
-          ),
+          style: AppTextStyle.s22Bold,
         ),
         SizedBox(height: 8.0),
         Text(
           'A Senior Mobile Application Developer with over 4 years of hands-on expertise in both Native Android and Hybrid Flutter application development.',
-          style: TextStyle(
-            color: Colors.grey,
-            fontSize: 16.0,
-          ),
+          style: AppTextStyle.s16Grey,
         ),
       ],
     );

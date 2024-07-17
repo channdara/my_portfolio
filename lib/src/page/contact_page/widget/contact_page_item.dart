@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../main_data.dart';
+import '../../../common/app_text_style.dart';
 
 class ContactPageItem extends StatelessWidget {
   const ContactPageItem({
@@ -21,18 +21,12 @@ class ContactPageItem extends StatelessWidget {
         children: [
           Text(
             '$label:    ',
-            style: const TextStyle(
-              fontSize: 16.0,
-              color: accentColor,
-            ),
+            style: AppTextStyle.s16Accent,
           ),
           Expanded(
             child: Text(
               content,
-              style: const TextStyle(
-                fontSize: 16.0,
-                color: Colors.white,
-              ),
+              style: AppTextStyle.s16,
             ),
           ),
         ],

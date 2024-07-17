@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../common/app_text_style.dart';
+
 class SubtitleWidget extends StatelessWidget {
   const SubtitleWidget(
     this.data, {
@@ -14,7 +16,7 @@ class SubtitleWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       data,
-      style: const TextStyle(color: Colors.grey, fontSize: 16.0),
+      style: AppTextStyle.s16Grey,
       textAlign: textAlign,
     );
   }

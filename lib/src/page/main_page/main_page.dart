@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../main_data.dart';
-import '../../widget/page_builder_widget.dart';
-import 'component/main_page_phone.dart';
-import 'component/main_page_website.dart';
+import '../../common/app_common_data.dart';
+import 'widget/main_page_app_bar.dart';
+import 'widget/main_page_tab_bar.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -15,13 +14,17 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
-    return const DefaultTabController(
+    return DefaultTabController(
       length: tabLength,
       initialIndex: tabInitialIndex,
-      child: PageBuilderWidget(
-        phone: MainPagePhone(),
-        tablet: MainPageWebsite(spacing: tabletSpacing),
-        website: MainPageWebsite(spacing: websiteSpacing),
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          final isPhone = constraints.constrainWidth() < 600;
+          return Scaffold(
+            appBar: MainPageAppBar(isPhone: isPhone),
+            body: const MainPageTabBarView(),
+          );
+        },
       ),
     );
   }
