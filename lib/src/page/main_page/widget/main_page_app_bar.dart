@@ -15,20 +15,16 @@ class MainPageAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      elevation: 0.0,
       color: primaryColor,
       margin: EdgeInsets.zero,
       shape: const RoundedRectangleBorder(),
       child: isPhone
-          ? Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Container(
-                  height: kToolbarHeight,
-                  alignment: Alignment.center,
-                  child: const MainPageTitle(),
-                ),
-                const MainPageTabBar(tabAlignment: TabAlignment.center),
-              ],
+          ? AppBar(
+              elevation: 0.0,
+              centerTitle: true,
+              title: const MainPageTitle(),
+              bottom: const MainPageTabBar(tabAlignment: TabAlignment.center),
             )
           : const Row(
               children: [

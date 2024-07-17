@@ -23,8 +23,8 @@ class ResumeButtonWidget extends StatelessWidget {
         ),
       ),
       child: const Text(
-        'MyPortfolio().generateResume().open();',
-        style: AppTextStyle.s18Primary,
+        'MyPortfolio().generateResume();',
+        style: AppTextStyle.s16Primary,
       ),
     );
   }

@@ -46,12 +46,10 @@ class ProjectPageCardPhone extends StatelessWidget {
                     Text(
                       project.name,
                       style: AppTextStyle.s16BoldAccent,
-                      textAlign: TextAlign.center,
                     ),
                     Text(
                       project.tag,
                       style: AppTextStyle.s14Grey,
-                      textAlign: TextAlign.center,
                     ),
                     if (project.showStoreListing)
                       ProjectStoreListing(

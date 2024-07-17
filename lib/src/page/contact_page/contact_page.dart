@@ -56,7 +56,7 @@ class _ContactPageState extends State<ContactPage> {
               spacing: 16.0,
               runSpacing: 16.0,
               children: Contact.items.map((e) {
-                const base = 50.0;
+                const base = 45.0;
                 const padding = 4.0;
                 const size = base - padding;
                 return InkWell(

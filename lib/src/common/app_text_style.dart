@@ -30,6 +30,10 @@ mixin AppTextStyle {
   );
 
   static const TextStyle s16 = TextStyle(fontSize: 16.0);
+  static const TextStyle s16Primary = TextStyle(
+    fontSize: 16.0,
+    color: primaryColor,
+  );
   static const TextStyle s16Accent = TextStyle(
     fontSize: 16.0,
     color: accentColor,
