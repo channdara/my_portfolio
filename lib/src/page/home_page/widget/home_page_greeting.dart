@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../common/app_common_data.dart';
 import '../../../common/app_text_style.dart';
+import '../../../widget/resume_button_widget.dart';
 
 class HomePageGreeting extends StatelessWidget {
   const HomePageGreeting({super.key});
@@ -25,6 +26,8 @@ class HomePageGreeting extends StatelessWidget {
           'A Senior Mobile Application Developer with over 4 years of hands-on expertise in both Native Android and Hybrid Flutter application development.',
           style: AppTextStyle.s16Grey,
         ),
+        SizedBox(height: phoneSpacing),
+        ResumeButtonWidget(),
       ],
     );
   }

@@ -6,7 +6,7 @@ const Color secondaryColor = Color(0xFF111827);
 const Color accentColor = Color(0xFFEAB308);
 
 const int tabLength = 5;
-const int tabInitialIndex = kDebugMode ? 4 : 0;
+const int tabInitialIndex = kDebugMode ? 0 : 0;
 
 const double _baseSpacingMultiplier = 24.0;
 const double phoneSpacing = _baseSpacingMultiplier;
