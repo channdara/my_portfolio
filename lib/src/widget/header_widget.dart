@@ -19,17 +19,19 @@ class HeaderWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.center,
-      children: [
-        TitleWidget(data: title),
-        const SizedBox(height: 8.0),
-        SubtitleWidget(
-          content,
-          textAlign: textAlign,
-        ),
-      ],
+    return SelectionArea(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: crossAxisAlignment ?? CrossAxisAlignment.center,
+        children: [
+          TitleWidget(data: title),
+          const SizedBox(height: 8.0),
+          SubtitleWidget(
+            content,
+            textAlign: textAlign,
+          ),
+        ],
+      ),
     );
   }
 }

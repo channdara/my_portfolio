@@ -24,28 +24,30 @@ class ExperiencePageCardPhone extends StatelessWidget {
         borderRadius: borderRadiusNormal,
         border: primary ? Border.all(color: accentColor) : null,
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            experience.date,
-            style: AppTextStyle.s14,
-          ),
-          const SizedBox(height: phoneSpacing),
-          Text(
-            experience.title,
-            style: AppTextStyle.s18Accent,
-          ),
-          Text(
-            experience.subtitle,
-            style: AppTextStyle.s14Grey,
-          ),
-          const SizedBox(height: phoneSpacing),
-          Text(
-            experience.description,
-            style: AppTextStyle.s14,
-          ),
-        ],
+      child: SelectionArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              experience.date,
+              style: AppTextStyle.s14,
+            ),
+            const SizedBox(height: phoneSpacing),
+            Text(
+              experience.title,
+              style: AppTextStyle.s18Accent,
+            ),
+            Text(
+              experience.subtitle,
+              style: AppTextStyle.s14Grey,
+            ),
+            const SizedBox(height: phoneSpacing),
+            Text(
+              experience.description,
+              style: AppTextStyle.s14,
+            ),
+          ],
+        ),
       ),
     );
   }

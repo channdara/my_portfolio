@@ -9,26 +9,28 @@ class HomePageGreeting extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          'Greeting!',
-          style: AppTextStyle.s18Accent,
-        ),
-        SizedBox(height: phoneSpacing),
-        Text(
-          "I'm EAM Channdara",
-          style: AppTextStyle.s22Bold,
-        ),
-        SizedBox(height: 8.0),
-        Text(
-          'A Senior Mobile Application Developer with over 4 years of hands-on expertise in both Native Android and Hybrid Flutter application development.',
-          style: AppTextStyle.s16Grey,
-        ),
-        SizedBox(height: phoneSpacing),
-        ResumeButtonWidget(),
-      ],
+    return const SelectionArea(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Greeting!',
+            style: AppTextStyle.s18Accent,
+          ),
+          SizedBox(height: phoneSpacing),
+          Text(
+            "I'm EAM Channdara",
+            style: AppTextStyle.s22Bold,
+          ),
+          SizedBox(height: 8.0),
+          Text(
+            'A Senior Mobile Application Developer with over 4 years of hands-on expertise in both Native Android and Hybrid Flutter application development.',
+            style: AppTextStyle.s16Grey,
+          ),
+          SizedBox(height: phoneSpacing),
+          ResumeButtonWidget(),
+        ],
+      ),
     );
   }
 }

@@ -18,55 +18,57 @@ class ProjectPageCardPhone extends StatelessWidget {
         color: primaryColor,
         borderRadius: borderRadiusNormal,
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                height: 100.0,
-                width: 100.0,
-                clipBehavior: Clip.hardEdge,
-                decoration: BoxDecoration(
-                  color: Colors.grey.shade900,
-                  borderRadius: borderRadiusSmall,
+      child: SelectionArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  height: 100.0,
+                  width: 100.0,
+                  clipBehavior: Clip.hardEdge,
+                  decoration: BoxDecoration(
+                    color: Colors.grey.shade900,
+                    borderRadius: borderRadiusSmall,
+                  ),
+                  child: Image.network(
+                    project.imageUrl ?? '',
+                    fit: BoxFit.cover,
+                    errorBuilder: (context, error, trace) => const SizedBox(),
+                  ),
                 ),
-                child: Image.network(
-                  project.imageUrl ?? '',
-                  fit: BoxFit.cover,
-                  errorBuilder: (context, error, trace) => const SizedBox(),
-                ),
-              ),
-              const SizedBox(width: phoneSpacing),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      project.name,
-                      style: AppTextStyle.s16BoldAccent,
-                    ),
-                    Text(
-                      project.tag,
-                      style: AppTextStyle.s14Grey,
-                    ),
-                    if (project.showStoreListing)
-                      ProjectStoreListing(
-                        project: project,
-                        mainAxisAlignment: MainAxisAlignment.start,
+                const SizedBox(width: phoneSpacing),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        project.name,
+                        style: AppTextStyle.s16BoldAccent,
                       ),
-                  ],
+                      Text(
+                        project.tag,
+                        style: AppTextStyle.s14Grey,
+                      ),
+                      if (project.showStoreListing)
+                        ProjectStoreListing(
+                          project: project,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                        ),
+                    ],
+                  ),
                 ),
-              ),
-            ],
-          ),
-          const SizedBox(height: phoneSpacing),
-          Text(
-            project.description,
-            style: AppTextStyle.s14,
-          ),
-        ],
+              ],
+            ),
+            const SizedBox(height: phoneSpacing),
+            Text(
+              project.description,
+              style: AppTextStyle.s14,
+            ),
+          ],
+        ),
       ),
     );
   }

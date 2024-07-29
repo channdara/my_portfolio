@@ -24,31 +24,33 @@ class ExperiencePageCard extends StatelessWidget {
         borderRadius: borderRadiusNormal,
         border: primary ? Border.all(color: accentColor) : null,
       ),
-      child: Column(
-        children: [
-          Text(
-            experience.date,
-            style: AppTextStyle.s14,
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: phoneSpacing),
-          Text(
-            experience.title,
-            style: AppTextStyle.s16BoldAccent,
-            textAlign: TextAlign.center,
-          ),
-          Text(
-            experience.subtitle,
-            style: AppTextStyle.s14Grey,
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: phoneSpacing),
-          Text(
-            experience.description,
-            style: AppTextStyle.s14,
-            textAlign: TextAlign.start,
-          ),
-        ],
+      child: SelectionArea(
+        child: Column(
+          children: [
+            Text(
+              experience.date,
+              style: AppTextStyle.s14,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: phoneSpacing),
+            Text(
+              experience.title,
+              style: AppTextStyle.s16BoldAccent,
+              textAlign: TextAlign.center,
+            ),
+            Text(
+              experience.subtitle,
+              style: AppTextStyle.s14Grey,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: phoneSpacing),
+            Text(
+              experience.description,
+              style: AppTextStyle.s14,
+              textAlign: TextAlign.start,
+            ),
+          ],
+        ),
       ),
     );
   }

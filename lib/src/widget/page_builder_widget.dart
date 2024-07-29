@@ -15,8 +15,11 @@ class PageBuilderWidget extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         final width = constraints.constrainWidth();
-        if (width < 600) return phone;
-        return website;
+        final child = width < 600 ? phone : website;
+        return GestureDetector(
+          onTap: FocusManager.instance.primaryFocus?.unfocus,
+          child: child,
+        );
       },
     );
   }
